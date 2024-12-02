@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Website Kelompok 7 tentang Materi Turunan Matematika">
     <title>Website Kelompok 7 - Materi Integral</title>
+    <script type="text/javascript" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
 
     <style>
     /* CSS untuk body */
@@ -644,26 +647,26 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="course-card">
             <div class="course-icon">🌐</div>
             <h3>Pengertian Integral</h3>
-            <p>(1). Integral adalah proses<br>
-                matematika untuk
-                menemukan fungsi yang
-                turunannya adalah fungsi
-                yang diberikan.
-                (2). Integral tak tentu adalah<br>
-                proses untuk mencari fungsi
-                yang diturunkan menjadi
-                fungsi yang diberikan</p>
+            <p> Integral adalah salah satu cabang ilmu kalkulus.
+                Secara umum, integral mengukur jumlah atau akumulasi
+                dari sesuatu dalam suatu domain tertentu. 
+                Maka dari itu, pengertian nilai integral mencakup luas di bawah kurva fungsi pada interval tertentu.
+                </p>
         </div>
 
         <div class="course-card">
             <div class="course-icon">➕</div>
             <h3>Integral Tak Tentu</h3>
-            <p>(1). Definisi<br>
-                Integral tak tentu adalah kumpulan semua fungsi turunan yang
-                mungkin dari suatu fungsi
-                (2). Notasi<br>
+            <p> (1). Definisi<br>
+                Integral Tak Tentu adalah jenis integral yang hasilnya
+                masih berupa fungsi dalam variabel tertentu dan masih memuat konstanta integrasinya.
+                Integral Tak Tentu tidak memiliki batas atas dan batas bawah.<br>
+                (2). Notasi Rumus Integral Tak Tentu<br>
                 Integral tak tentu dinyatakan dengan simbol ∫ f(x) dx, di mana
-                f(x) adalah fungsi yang akan diintegralkan.</p>
+                f(x) adalah fungsi yang akan diintegralkan.<br>
+                ∫ f(x) dx = f(x) + C
+            </p>
+                
         </div>
 
         <div class="course-card">
@@ -672,10 +675,12 @@ document.addEventListener('DOMContentLoaded', () => {
             <p>(1). Substitusi<br>
                 Mengubah variabel untuk menyederhanakan
                 fungsi yang akan diintegralkan.
+                $$\int \left[ f(u) \frac{du}{dx} \right] dx = \int f(u) \, du$$
                 (2). Integrasi Parsial<br>
                 Menggunakan aturan integral dengan
                 mengalikan dan membagi fungsi
                 tertentu.
+                $$f(x)g(x)dx = \int u dv = uv - \int v du$$<br>
                 (3). Identitas Trigonometri<br>
                 Memanfaatkannya untuk menyederhanakan fungsi</p>
         </div>
@@ -684,11 +689,12 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="course-icon">📐</div>
             <h3>Integral Tentu</h3>
             <p>(1). Definisi<br>
-                Integral tentu adalah jumlah atau limit dari jumlah luas daerah
-                di bawah kurva dalam interval tertentu.
+                Integral Tentu adalah bentuk integral matematika yang memiliki batasan atas dan batasan bawah yang jelas,
+                sehingga menghasilkan sebuah nilai.
                 (2). Notasi<br>
                 Integral tentu dinyatakan dengan simbol ∫ab f(x) dx, di mana a
-                dan b adalah batas-batas interval</p>
+                dan b adalah batas-batas interval. Rumus Integral Tentu yaitu:<br>
+                ₐ∫ᵇ f(x) dx = [F(x)] ₐᵇ = F(b) - F(a)<br></p>
         </div>
 
         <div class="course-card">
@@ -712,7 +718,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 menyatakan hubungan antara
                 turunan dan integral, di mana
                 integral adalah kebalikan dari
-                turunan.
+                turunan.<br>
                 (2). Aplikasi Teorema :<br>
                 Teorema ini memungkinkan
                 kita untuk menghitung
@@ -738,12 +744,13 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="course-icon">🔢</div>
             <h3>Rumus Integral Tak Tentu</h3>
             <p>Integral Tak Tentu<br>
-                Integral tak tentu adalah operasi anti-turunan yang menghasilkan sebuah fungsi umum. Rumus integral tak tentu ditulis sebagai berikut:
-                ∫ f(x) dx = F(x) + C
+                Integral tak tentu adalah operasi anti-turunan yang menghasilkan sebuah fungsi umum.<br>
+                Rumus integral tak tentu ditulis sebagai berikut:<br>
+                ∫ f(x) dx = F(x) + C<br>
                 Keterangan:<br>
-                • - f(x) adalah fungsi integran.<br>
-                • - F(x) adalah anti-turunan dari f(x).<br>
-                • - C adalah konstanta integrasi.<br>
+                • f(x) adalah fungsi integran.<br>
+                • F(x) adalah anti-turunan dari f(x).<br>
+                • C adalah konstanta integrasi.<br>
                 </p>
         </div>
 
@@ -762,13 +769,12 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="course-card">
             <div class="course-icon">🔢</div>
             <h3>Rumus Integral Tentu</h3>
-            <p>Integral Tentu<br>
-                Integral tentu digunakan untuk menghitung luas di bawah kurva dalam interval tertentu. Rumus integral tentu ditulis sebagai berikut:
-                ∫[a,b] f(x) dx = F(b) - F(a)
+            <p>Rumus integral tentu ditulis sebagai berikut:<br>
+                ₐ∫ᵇ f(x) dx = F(b) - F(a)<br>
                 Keterangan:<br>
-                • - f(x) adalah fungsi integran.<br>
-                • - F(x) adalah anti-turunan dari f(x).<br>
-                • - [a, b] adalah batas-batas integrasi.<br>
+                • f(x) adalah fungsi integral.<br>
+                • F(x) adalah anti-turunan dari f(x).<br>
+                • [a, b] adalah batas-batas integrasi.<br>
                 </p>
         </div>
 
@@ -776,10 +782,12 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="course-icon">🔢</div>
             <h3>Sifat Integral  Tentu</h3>
             <p>Sifat-Sifat Tentu<br>
-                (1). ∫[a,a] f(x) dx = 0<br>
-                (2). ∫[a,b] f(x) dx = -∫[b,a] f(x) dx<br>
-                (3). ∫[a,b] [f(x) + g(x)] dx = ∫[a,b] f(x) dx + ∫[a,b] g(x) dx<br>
-                (4). ∫[a,b] k f(x) dx = k ∫[a,b] f(x) dx, untuk k adalah konstanta<br>
+                (1). ∫[a,b] f(x) dx = F(b) - F(a)<br>
+                (2). ∫[a,b] f(x) dx = 0<br>
+                (3). ∫[a,b] f(x) dx = -∫[b,a] f(x) dx<br>
+                (4). ∫[a,b] [f(x) + g(x)] dx = ∫[a,b] f(x) dx + ∫[a,b] g(x) dx<br>
+                (5).∫[a,b] [f(x) - g(x)] dx = ∫[a,b] f(x) dx - ∫[a,b] g(x) dx<br>
+                (6). ∫[a,b] k f(x) dx = k ∫[a,b] f(x) dx, untuk k adalah konstanta<br>
                 </p>
         </div>
 
@@ -798,9 +806,36 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="course-card">
             <div class="course-icon">🔢</div>
             <h3>Contoh Soal</h3>
-            <p>Cari integral tak tentu dari f(x) = 3x²<br>
-                (Jawaban) Penyelesaian: ∫ 3x² dx = x³ + C (Menggunakan aturan dasar integral, 
-                naikkan pangkat dan bagi dengan pangkat baru)<br></p>
+            <p>Hitunglah integral dibawah ini!<br>
+                1. ∫ (3x² + 2x -5) dx<br>
+                Jawaban :  <br>
+                = (3/2+1)x³ + (2/1+1)x² - 5x + C <br>
+                = x³ + x² - 5x + C<br></p>
+        </div>
+
+        <div class="course-card">
+            <div class="course-icon">🔢</div>
+            <h3>Contoh Soal</h3>
+            <p>Hitunglah integral dibawah ini!<br>
+                2. ∫[3,1] (4x³ - 3x² + 2) dx<br>
+                Jawab :<br>
+                (4/3+1)x⁴ - (3/2+1)x³ + 2x<br>
+                = x⁴ - x³ + 2x<br>
+                disubtitusi :<br>
+                F(x) = F(b) - F(a)<br>
+                = [3⁴ - 3³ + 2(3)] - [1⁴ - 1³ + 2(1)]<br>
+                = [81 - 27 + 6] - [1 - 1 + 2]<br>
+                = 60 - 2<br>
+                = 58<br></p>
+        </div>
+
+        <div class="course-card">
+            <div class="course-icon">🔢</div>
+            <h3>Contoh Soal</h3>
+            <p>Hitunglah integral dibawah ini!<br>
+                3. ∫ sin (x) dx<br>
+                Jawaban :  <br>
+                = - cos x + C <br></p>
         </div>
 
         <div class="course-card">
@@ -814,7 +849,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 </section>
 
-<!-- CSS Materi Turunan -->
+<!-- CSS Materi Turunan  -->
 <style>
     #courses {
             background: linear-gradient(135deg,  #9ebe6a 0%, #fc7aa1 100%);
